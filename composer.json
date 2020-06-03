@@ -1,6 +1,7 @@
 {
     "name": "pdh-wkhtmltopdf",
     "description": "Static binaries of wkhtmltopdf project for each OS available.",
+    "version": "1.0.0",
     "license": "LGPL Version 3",
     "homepage": "http://wkhtmltopdf.org/",
     "authors": [
