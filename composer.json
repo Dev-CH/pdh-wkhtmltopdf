@@ -1,5 +1,5 @@
 {
-    "name": "PDH/wkhtmltopdf",
+    "name": "pdh-wkhtmltopdf",
     "description": "Static binaries of wkhtmltopdf project for each OS available.",
     "license": "LGPL Version 3",
     "homepage": "http://wkhtmltopdf.org/",
@@ -9,7 +9,7 @@
             "email": "n/a"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "bin": [
         "bin/wkhtmltopdf-amd64"
     ],
