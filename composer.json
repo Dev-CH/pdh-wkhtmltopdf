@@ -10,7 +10,7 @@
             "email": "n/a"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "bin": [
         "bin/wkhtmltopdf-amd64"
     ],
