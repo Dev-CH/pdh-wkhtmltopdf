@@ -12,7 +12,8 @@
     ],
     "minimum-stability": "dev",
     "bin": [
-        "bin/wkhtmltopdf-amd64"
+        "bin/wkhtmltopdf-mac",
+        "bin/wkhtmltopdf-debian"
     ],
     "require": {
     },
