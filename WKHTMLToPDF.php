@@ -3,30 +3,25 @@ namespace pdh\WKHTMLToPDF;
 
 class WKHTMLToPDF
 {
-    const PATH = __DIR__ . '/bin/wkhtmltopdf-amd64';
+    const PATH = __DIR__ . '/bin/wkhtmltopdf';
 
+    /**
+     * @return string
+     *
+     * @throws OSNotSupportedException
+     */
     public static function getPath()
     {
-//        // Switch architecture if needed
-//        if(2147483647 == PHP_INT_MAX) {
-//            $architecture = 'i386';
-//        }else{
-//            $architecture = 'amd64';
-//        }
-
         switch (PHP_OS_FAMILY) {
-            case 'Windows':
-                return __DIR__.'w';
-            case 'BSD':
-                return __DIR__.'b';
             case 'Darwin':
-                return __DIR__.'d';
-            case 'Solaris':
-                return __DIR__.'s';
+                return self::PATH.'-mac';
             case 'Linux':
-                return __DIR__.'l';
+                return self::PATH.'-debian';
+            case 'Solaris':
+            case 'Windows':
+            case 'BSD':
             default:
-                return null;
+                throw new OSNotSupportedException('OS is not currently supported.');
         }
     }
 }
