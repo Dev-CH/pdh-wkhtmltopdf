@@ -1,0 +1,23 @@
+{
+    "name": "PDH/wkhtmltopdf",
+    "description": "Static binaries of wkhtmltopdf project for each OS available.",
+    "license": "LGPL Version 3",
+    "homepage": "http://wkhtmltopdf.org/",
+    "authors": [
+        {
+            "name": "Chris Hammer",
+            "email": "n/a"
+        }
+    ],
+    "minimum-stability": "dev",
+    "bin": [
+        "bin/wkhtmltopdf-amd64"
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "pdh\\WKHTMLToPDF\\": ""
+        }
+    }
+}
